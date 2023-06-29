@@ -3,9 +3,38 @@
   <component name="deploymentTargetDropDown">
     <value>
       <entry key="app">
-        <State />
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="$USER_HOME$/.android/avd/Pixel_4_API_31.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2023-06-27T13:56:00.149Z" />
+        </State>
       </entry>
       <entry key="tv">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="$USER_HOME$/.android/avd/Television_1080p_API_31.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2023-06-28T14:56:30.198122Z" />
+        </State>
+      </entry>
+      <entry key="uicomponents">
         <State />
       </entry>
     </value>

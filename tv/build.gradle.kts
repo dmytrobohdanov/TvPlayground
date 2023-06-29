@@ -51,11 +51,12 @@ android {
 }
 
 dependencies {
+    implementation(project(mapOf("path" to ":uilibrary")))
+
     implementation(libs.core.ktx)
     implementation(platform(libs.compose.bom))
     implementation(libs.activity.compose)
     implementation(libs.ui.tooling.preview)
-//    implementation(libs.material3)
     implementation(libs.tv.material)
     implementation(libs.tv.foundation)
 

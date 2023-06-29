@@ -16,3 +16,5 @@ dependencyResolutionManagement {
 rootProject.name = "TvPlayground"
 include(":app")
 include(":tv")
+include(":uicomponents")
+include(":uilibrary")

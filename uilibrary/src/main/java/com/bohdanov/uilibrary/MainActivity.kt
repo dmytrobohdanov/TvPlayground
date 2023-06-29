@@ -1,17 +1,16 @@
-@file:OptIn(ExperimentalTvMaterial3Api::class)
-
-package com.bohdanov.tvplayground
+package com.bohdanov.uilibrary
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.tv.material3.ExperimentalTvMaterial3Api
-import androidx.tv.material3.Surface
-import com.bohdanov.tvplayground.theme.TvPlaygroundTheme
-import com.bohdanov.uilibrary.temp.getCatalog
-import com.bohdanov.uilibrary.ui.components.CatalogBrowserTv
+import androidx.compose.ui.tooling.preview.Preview
+import com.bohdanov.uilibrary.ui.components.PhGreeting
+import com.bohdanov.uilibrary.ui.theme.TvPlaygroundTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,10 +20,19 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
                 ) {
-                    CatalogBrowserTv(sectionList = getCatalog())
+                    PhGreeting("Android")
                 }
             }
         }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview() {
+    TvPlaygroundTheme {
+        PhGreeting("Android")
     }
 }
